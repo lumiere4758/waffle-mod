@@ -26,12 +26,43 @@ public class Main implements ModInitializer {
 			.saturationModifier(0.6f)
 			.build();
 
+	public static final FoodProperties CHOCOLATE_WAFFLE_FOOD = new FoodProperties.Builder()
+			.nutrition(7)
+			.saturationModifier(0.7f)
+			.build();
+
+	public static final FoodProperties GLOW_BERRY_WAFFLE_FOOD = new FoodProperties.Builder()
+			.nutrition(6)
+			.saturationModifier(0.6f)
+			.build();
+
+	public static final FoodProperties GOLDEN_WAFFLE_FOOD = new FoodProperties.Builder()
+			.nutrition(8)
+			.saturationModifier(1.2f)
+			.alwaysEdible()
+			.build();
+
+	public static final FoodProperties SWEET_BERRY_WAFFLE_FOOD = new FoodProperties.Builder()
+			.nutrition(6)
+			.saturationModifier(0.6f)
+			.build();
+
 	public static final Item BATTER_MIX = registerItem("batter_mix", Item::new, new Item.Properties());
 	public static final Item WAFFLE = registerItem("waffle", Item::new, new Item.Properties().food(WAFFLE_FOOD));
+	public static final Item CHOCOLATE_WAFFLE = registerItem("chocolate_waffle", Item::new, new Item.Properties().food(CHOCOLATE_WAFFLE_FOOD));
+	public static final Item GLOW_BERRY_WAFFLE = registerItem("glow_berry_waffle", Item::new, new Item.Properties().food(GLOW_BERRY_WAFFLE_FOOD));
+	public static final Item GOLDEN_WAFFLE = registerItem("golden_waffle", Item::new, new Item.Properties().food(GOLDEN_WAFFLE_FOOD));
+	public static final Item SWEET_BERRY_WAFFLE = registerItem("sweet_berry_waffle", Item::new, new Item.Properties().food(SWEET_BERRY_WAFFLE_FOOD));
 
 	public static final Block WAFFLE_BLOCK = registerBlock(
 			"waffle_block",
 			WaffleBlock::new,
+			BlockBehaviour.Properties.of().strength(0.5f)
+	);
+
+	public static final Block BIG_WAFFLE = registerBlock(
+			"big_waffle",
+			BigWaffleBlock::new,
 			BlockBehaviour.Properties.of().strength(0.5f)
 	);
 
@@ -40,7 +71,12 @@ public class Main implements ModInitializer {
 		CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS).register(content -> {
 			content.accept(BATTER_MIX);
 			content.accept(WAFFLE);
+			content.accept(CHOCOLATE_WAFFLE);
+			content.accept(GLOW_BERRY_WAFFLE);
+			content.accept(GOLDEN_WAFFLE);
+			content.accept(SWEET_BERRY_WAFFLE);
 			content.accept(WAFFLE_BLOCK.asItem());
+			content.accept(BIG_WAFFLE.asItem());
 		});
 	}
 
