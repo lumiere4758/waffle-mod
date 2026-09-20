@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "waffles:big_waffle"
+  ],
+  "result": {
+    "count": 9,
+    "id": "waffles:waffle_block"
+  }
+}
