@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0" : "waffles:item/batter_mix"
+    "layer0": "waffles:item/batter_mix"
   }
 }

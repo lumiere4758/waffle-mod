@@ -1,11 +1,10 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "waffles:batter_mix"
-  },
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": "waffles:batter_mix",
   "result": {
     "id": "waffles:waffle"
-  },
-  "experience": 0.35,
-  "cookingtime": 200
+  }
 }

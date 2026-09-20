@@ -1,17 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "building",
   "pattern": [
     "WWW",
     "WWW",
     "WWW"
   ],
   "key": {
-    "W": {
-      "item": "waffles:waffle"
-    }
+    "W": "waffles:waffle"
   },
   "result": {
-    "id": "waffles:waffle_block",
-    "count": 1
+    "count": 1,
+    "id": "waffles:waffle_block"
   }
 }

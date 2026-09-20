@@ -1,13 +1,14 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "category": "misc",
   "ingredients": [
-    { "item": "minecraft:wheat" },
-    { "item": "minecraft:milk_bucket" },
-    { "item": "minecraft:egg" },
-    { "item": "minecraft:sugar" }
+    "minecraft:wheat",
+    "minecraft:egg",
+    "minecraft:milk_bucket",
+    "minecraft:sugar"
   ],
   "result": {
-    "id": "waffles:batter_mix",
-    "count": 1
+    "count": 1,
+    "id": "waffles:batter_mix"
   }
 }
