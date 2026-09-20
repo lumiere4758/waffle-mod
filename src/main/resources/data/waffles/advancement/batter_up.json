@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "waffles:batter_mix"
+    },
+    "title": {
+      "text": "Batter Up!"
+    },
+    "description": {
+      "text": "Craft your first bowl of Waffle Batter."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "has_batter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "waffles:batter_mix"
+          }
+        ]
+      }
+    }
+  }
+}

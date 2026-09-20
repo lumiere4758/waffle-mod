@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "id": "waffles:waffle"
+    },
+    "title": {
+      "text": "Iron Chef"
+    },
+    "description": {
+      "text": "Cook a Waffle in a Furnace or Waffle Iron."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "waffles:batter_up",
+  "criteria": {
+    "has_waffle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "waffles:waffle"
+          }
+        ]
+      }
+    }
+  }
+}
