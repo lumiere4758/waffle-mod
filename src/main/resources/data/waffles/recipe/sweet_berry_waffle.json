@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "waffles:waffle",
+    "minecraft:sweet_berries"
+  ],
+  "result": {
+    "count": 1,
+    "id": "waffles:sweet_berry_waffle"
+  }
+}
